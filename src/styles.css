@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+   --cor1: #444;
+   --cor2: #dec129;
+}
+
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   color: var(--cor1);
+}
+
+a{
+   text-decoration: none;
+   color: var(--cor1);
+   transition: .4s;
+}
+
+a:hover {
+   color: var(--cor2);
+}
