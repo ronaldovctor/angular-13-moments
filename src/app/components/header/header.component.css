@@ -1,0 +1,57 @@
+:root{
+   --cor1: #777;
+   --cor2: #dec129;
+}
+
+nav{
+   display: flex;
+   justify-content: space-between;
+   padding: 1em;
+   border-bottom: 1px solid var(--cor1);
+   width: 100%;
+}
+
+nav .brand img {
+   width: 50px;
+   transform: scale(2);
+   margin-right: 1.2em;
+}
+
+.brand, .links {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.links {
+   width: 100%;
+   justify-content: flex-end;
+}
+
+.links li {
+   list-style: none;
+   margin-right: 1em;
+}
+
+.links li a {
+   padding: 7px;
+   border-radius: 50px;
+   border: 1.2px solid transparent;
+}
+
+#add a {
+   color: var(--cor2);
+}
+
+#add a:hover {
+   background-color: #f5f5f5;
+   box-shadow: 0 0 5px var(--cor2);
+}
+
+.brand h2 {
+   transition: .4s;
+}
+
+.brand h2:hover {
+   color: var(--cor2)
+}
