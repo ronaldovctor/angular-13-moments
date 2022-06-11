@@ -35,8 +35,12 @@ nav .brand img {
 
 .links li a {
    padding: 7px;
-   border-radius: 50px;
-   border: 1.2px solid transparent;
+   border-bottom: 1.2px solid transparent;
+}
+
+.links li a:hover {
+   box-shadow: 0px 5px 6px -5px black;
+
 }
 
 #add a {
@@ -44,8 +48,7 @@ nav .brand img {
 }
 
 #add a:hover {
-   background-color: #f5f5f5;
-   box-shadow: 0 0 5px var(--cor2);
+   box-shadow: 0px 6px 7px -5px #ceb225;
 }
 
 .brand h2 {
