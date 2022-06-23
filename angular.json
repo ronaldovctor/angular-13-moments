@@ -102,5 +102,8 @@
       }
     }
   },
-  "defaultProject": "moments"
+  "defaultProject": "moments",
+  "cli": {
+    "analytics": false
+  }
 }
