@@ -1,0 +1,38 @@
+.moment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.moment img {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+h1{
+    margin-bottom: 1em;
+}
+
+.about-moment,
+.actions{
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    padding: 1.2em
+}
+
+.actions {
+    background-color: #eee;
+}
+
+.comments {
+    margin-bottom: 1em;
+    padding: 1.5em 0;
+}
+
+.about-moment h3, .actions h3, .comments h3 {
+    margin-bottom: 1em;
+}
