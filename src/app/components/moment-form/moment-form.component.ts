@@ -18,9 +18,9 @@ export class MomentFormComponent implements OnInit {
   ngOnInit(): void {
     this.momentForm = new FormGroup({
       id: new FormControl(''),
-      title: new FormControl('', [Validators.required]),
-      description: new FormControl('', [Validators.required]),
-      image: new FormControl('')
+      title: new FormControl(this.momentData ? this.momentData.title : '', [Validators.required]),
+      description: new FormControl(this.momentData ? this.momentData.description : '', [Validators.required]),
+      image: new FormControl(this.momentData ? this.momentData.image : '')
     })
   }
 
@@ -39,8 +39,6 @@ export class MomentFormComponent implements OnInit {
 
   submit():void{
     if(this.momentForm.invalid) return
-    console.log("Formulário enviado!")
-    console.log(this.momentForm.value)
     this.onSubmit.emit(this.momentForm.value)
   }
 
